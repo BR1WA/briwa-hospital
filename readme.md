@@ -1,13 +1,30 @@
 # Briwa Hospital Management System
 
-Briwa Hospital is a basic hospital management system built to manage essential operations such as patient registration, staff handling, and appointment scheduling. The project uses Java and standard frontend technologies.
+Briwa Hospital is a web-based hospital management system built with Java, Spring Boot, Thymeleaf, and Bootstrap. It provides secure user authentication, role-based access control, and essential features for managing patient data.
 
-## Features
+Features
 
-* Patient Registration and Management
-* Doctor and Staff Management
-* Appointment Scheduling
-* Basic UI with HTML interfaces
+🧑‍⚕️ Patient Management
+
+Add, update, and delete patient records with attributes such as name, date of birth, illness indicator (boolean), and numeric score.
+
+🔍 Search and Browse
+
+All authenticated users can browse the paginated patient list and search by name.
+
+🔐 Authentication & Security
+
+Spring Security ensures protected access. Passwords are securely stored using BCrypt encryption.
+
+📅 Role-Based Access Control (RBAC)
+
+Two main roles: USER (read-only access) and ADMIN (full CRUD operations). Access is controlled via @PreAuthorize annotations.
+
+🔹 Web User Interface
+
+Built with Thymeleaf and Bootstrap for a responsive, user-friendly experience. Includes navbars, validated forms, tables, and confirmation prompts.
+
+
 
 ## Technologies Used
 
